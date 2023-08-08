@@ -27,7 +27,7 @@ const [showPassword, setShowPassword] = useState(false);
   const validateForm = (email: string, password: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const isEmailValid = emailRegex.test(email);
-    const isPasswordValid = password.length >= 6;
+    const isPasswordValid = password.length >= 8;
     setIsFormValid(isEmailValid && isPasswordValid);
   };
 
