@@ -66,6 +66,7 @@ const handleEndTimeChange = (event: any, selectedTime: Date | undefined) => {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.TextStyle}> Enter the task details</Text>
       <TextInput
         style={[
           styles.input]}
@@ -144,6 +145,12 @@ const styles = StyleSheet.create({
     padding: 39,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  TextStyle: {
+    marginBottom: 16,
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: 'black',
   },
   input: {
     width: '100%',
