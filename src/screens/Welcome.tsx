@@ -4,6 +4,9 @@ const Welcome = () => {
     return (
         <View style={styles.container}>
             <Text style={styles.welcomeText}>Welcome to Toggl Track Clone</Text>
+            <Text style={styles.DescText}> Here where you can track and manage your time
+            on the tasks that you want to acomplish</Text>
+            <Text style={styles.DescText}>Please use the tab bars below to navigate between screens</Text>
         </View>
     );
 }
@@ -14,7 +17,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 16,
-    backgroundColor: 'darkpurple', // Set the background color to darkpurple
   },
 
   welcomeText: {
@@ -22,6 +24,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 16,
     color: 'black',
-  }});
+  },
+  DescText: {
+    fontSize: 16,
+    marginBottom: 16,
+    color: 'black',
+    textAlign: 'center',
+
+  }
+});
 
   export default Welcome;
